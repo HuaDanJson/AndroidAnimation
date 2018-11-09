@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+这里需要说下set中的属性android:ordering：规定了这个set中的动画的执行顺序，包括：
+together（默认）：set中的动画同时执行
+sequentially：set中的动画按顺序执行
+-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="sequentially"
+     android:repeatCount="infinite"
+     android:repeatMode="reverse">
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="rotation"
+        android:repeatMode="reverse"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:valueType="floatType"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="translationX"
+        android:valueFrom="0"
+        android:valueTo="200"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="translationY"
+        android:repeatMode="reverse"
+        android:valueFrom="200"
+        android:valueTo="100"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="rotation"
+        android:repeatMode="reverse"
+        android:valueFrom="0"
+        android:valueTo="360"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="translationX"
+        android:repeatMode="reverse"
+        android:valueFrom="0"
+        android:valueTo="-200"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="translationX"
+        android:repeatMode="reverse"
+        android:valueFrom="-200"
+        android:valueTo="0"/>
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="translationY"
+        android:repeatMode="reverse"
+        android:valueFrom="200"
+        android:valueTo="-100"/>
+</set>

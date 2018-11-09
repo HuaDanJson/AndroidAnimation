@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+android:duration：动画持续时间；
+android:propertyName：动画类型；
+android:repeatCount：重复次数，-1为一直重复；
+android:repeatMode：重复模式：reverse（从结束的位置继续）， restart（从新开始）；
+android:valueFrom：起始值；
+android:valueTo：结束值。
+android:valueType：值类型
+-->
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:propertyName="translationX"
+    android:repeatCount="-1"
+    android:repeatMode="reverse"
+    android:valueFrom="0"
+    android:valueTo="200"
+    android:valueType="floatType"/>
+
+

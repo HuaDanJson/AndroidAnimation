@@ -57,5 +57,5 @@ sequentially：set中的动画按顺序执行
         android:propertyName="translationY"
         android:repeatMode="reverse"
         android:valueFrom="200"
-        android:valueTo="-100"/>
+        android:valueTo="0"/>
 </set>
